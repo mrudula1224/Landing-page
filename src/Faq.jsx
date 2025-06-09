@@ -1,11 +1,40 @@
 import React, { useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
-const Faqs1 = () => {
-  const faqs = [
-    // ...your FAQ objects...
-  ];
+const faqs = [
+  {
+    id: 1,
+    question: "What is an AI agent and how does it work?",
+    answer:
+      "An AI agent is an autonomous software entity that can perform tasks, answer questions, and interact with users using artificial intelligence. It processes natural language input, learns from interactions, and automates workflows for your business.",
+  },
+  {
+    id: 2,
+    question: "How secure is my data with your AI agent?",
+    answer:
+      "Security is our top priority. All communications are encrypted, and our AI agents comply with industry-standard security protocols to ensure your data remains private and protected.",
+  },
+  {
+    id: 3,
+    question: "Can I integrate the AI agent with my existing tools?",
+    answer:
+      "Yes! Our AI agents support seamless integration with popular platforms such as Slack, Gmail, Notion, Zapier, and more. You can also use our API for custom integrations.",
+  },
+  {
+    id: 4,
+    question: "Does the AI agent require training or setup?",
+    answer:
+      "Our AI agent comes pre-trained for common business tasks. You can customize its behavior with simple instructions, and it learns continuously from interactions to improve over time.",
+  },
+  {
+    id: 5,
+    question: "What kind of support is available?",
+    answer:
+      "We offer 24/7 support via chat and email. You can also access our help center, detailed documentation, and community forums for additional assistance.",
+  },
+];
 
+const Faq = () => {
   const [activeId, setActiveId] = useState(1);
 
   const toggleAccordion = (id) => {
@@ -20,7 +49,7 @@ const Faqs1 = () => {
             Frequently Asked Questions
           </h2>
           <p className="mt-4 text-base font-normal leading-7 text-blue-800 lg:text-lg lg:mt-6 lg:leading-8">
-            Ask everything you need to know about our products and services.
+            Everything you need to know about our AI agents, integration, and support.
           </p>
         </div>
 
@@ -28,17 +57,17 @@ const Faqs1 = () => {
           {faqs.map((faq) => (
             <div
               key={faq.id}
-              className="rounded-xl bg-blue-100 border border-blue-300 shadow transition-all duration-200"
+              className="rounded-2xl bg-white/60 backdrop-blur-md shadow-lg transition-all duration-200"
               role="region"
             >
               <h3>
                 <button
                   onClick={() => toggleAccordion(faq.id)}
                   aria-expanded={activeId === faq.id}
-                  className="flex items-center justify-between w-full px-6 py-5 text-lg font-semibold text-left text-blue-900 sm:p-6 focus:outline-none transition-colors duration-200 hover:bg-blue-200"
+                  className="flex items-center justify-between w-full px-6 py-5 text-lg font-semibold text-left text-blue-900 sm:p-6 focus:outline-none transition-colors duration-200 hover:bg-white/70 bg-transparent"
                 >
                   <span>{faq.question}</span>
-                  <span className="ml-4 flex items-center justify-center w-8 h-8 rounded-full bg-blue-200 text-blue-700 shadow hover:bg-blue-300 transition">
+                  <span className="ml-4 flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 transition">
                     {activeId === faq.id ? (
                       <FaMinus className="w-4 h-4" />
                     ) : (
@@ -48,21 +77,21 @@ const Faqs1 = () => {
                 </button>
               </h3>
               {activeId === faq.id && (
-                <div className="px-6 pb-6 bg-blue-50 rounded-b-xl">
+                <div className="px-6 pb-6 bg-blue-50 rounded-b-2xl">
                   <p className="text-base text-blue-800">{faq.answer}</p>
                 </div>
               )}
             </div>
           ))}
         </div>
-
-        {/* ...rest of your section... */}
       </div>
     </section>
   );
 };
 
-export default Faqs1;
+export default Faq;
+
+
 
 
 
