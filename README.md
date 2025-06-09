@@ -32,7 +32,8 @@ This project is live at:
 
 ## 📸 Screenshots
 
-_Add screenshots here if needed (drag image into README or use image URL)_
+
+<img width="1470" alt="Screenshot 2025-06-09 at 4 01 35 PM" src="https://github.com/user-attachments/assets/430b5b0d-54d7-4f94-b2ed-2f70d1efcab4" />
 
 ---
 
