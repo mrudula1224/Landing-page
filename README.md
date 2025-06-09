@@ -1,12 +1,45 @@
-# React + Vite
+# AI Agent Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 A modern, responsive landing page built for showcasing an AI-based product or service.
 
-Currently, two official plugins are available:
+🔗 [Live Demo](https://aiagentlangdingpage.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Fully responsive layout
+- Sleek, modern UI/UX
+- Fast and lightweight
+- Deployed with Netlify
+
+---
+
+## 📁 Project Structure
+
+- `index.html` – Main HTML structure
+- `styles/` – Contains CSS or Tailwind styling
+- `scripts/` – Contains JavaScript (if any)
+
+---
+
+## 🚀 Deployment
+
+This project is live at:  
+👉 **[aiagentlangdingpage.netlify.app](https://aiagentlangdingpage.netlify.app)**
+
+---
+
+## 📸 Screenshots
+
+_Add screenshots here if needed (drag image into README or use image URL)_
+
+---
+
+## 🙋‍♀️ Author
+
+Made with 💙 by [Mrudula Kharge](https://github.com/mrudula1224)
+
+---
+
+
